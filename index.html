@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La Chouette Agence Lyon - Optimisation du site</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="la-chouette-agence.webp" alt="Logo La Chouette Agence">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="https://kth-png.github.io/starting-website/index.html">Version actuelle</a>
+                </li>
+                <li class="nav-item">
+                        <a href="https://kth-png.github.io/KathiaNwal_4_20052021/index.html">Version optimisée</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Optimisation du site</h1>
+        </div>
+        <div class="versions">
+            <section>
+                <div>
+                    <h2>
+                        <a href="https://kth-png.github.io/starting-website/index.html">Version actuelle</a>
+                    </h2>
+                    <p class="text-justify">La version actuelle du site utilise certaines pratiques désuettes ou
+                        inadaptées
+                        et transmettent des informations érronées qui ne sont pas détectées par les outils d'audit,
+                        c'est le
+                        cas de:
+                        <br> - L'utilisation de la balise meta keywords: elle n'a plus d'impact sur le référencement
+                        naturel
+                        depuis que celui ci est tourné vers la cohérence du contenu.
+                        <br> - L'information sur la langue utilisée pour le site est erronée.
+                        <br> - L'utillisation d'images représentant du texte sans raison particulière.
+                        <br> - Les éléments d'image ont des attributs alt ne respectant pas les règles d'accessibilité,
+                        en
+                        effet elles ne décrivent pas les images en question.
+                        <br> - Certains liens n'ont pas de texte descriptif, c'est le cas de ceux des médias sociaux
+                        présents dans le footer des deux pages.
+                    </p>
+                </div>
+                <div>
+                    <h3>Bilan SEO avec Lighthouse</h3>
+                    <p>D'après <a href="https://www.oberlo.fr/blog/trafic-internet-mobile">Le site Oberlo</a>, en 2021,
+                        le trafic internet mobile représente 55,56% du trafic internet mondial, soit plus de la moitié.
+                        <br> Le résultat suivant provient de l'analyse de la version mobile du site actuel avec
+                        Lighthouse.
+                    </p>
+                    <figure>
+                        <img src="seo-lighthouse-og-mobile.png"
+                            alt="Analyse de la page d'accueil actuelle par Lighthouse - V. mobile">
+                        <figcaption>
+                            <p class="text-center bold">Audit de référencement de la version mobile du site actuel</p>
+                        </figcaption>
+                        <p></p>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Rapport d'accessibilité avec WAVE</h3>
+                    <div class="row">
+                        <figure>
+                            <img class="border-solid" src="wave-og-acceuil.png"
+                                alt="rapport d'accessibilité page d'acceuil originale">
+                            <figcaption>
+                                <p class="text-center bold"> Erreurs détectées sur la page d'acceuil</p>
+                            </figcaption>
+                            <p> > Langue invalide
+                                <br> > Lien vide x4
+                                <br> > Erreur de contraste x29
+                                <br> > Niveau de titre ignoré x1
+                                <br> > Zone de texte très petit x1
+                            </p>
+                        </figure>
+
+                        <figure>
+                            <img class="border-solid" src="wave-og-contact.png"
+                                alt="rapport d'accessibilite page de contact originale">
+                            <figcaption>
+                                <p class="text-center bold"> Erreurs détectées sur la page de contact</p>
+                            </figcaption>
+                            <p> > Langue invalide
+                                <br> > Élément Label de formulaire absent x4
+                                <br> > Erreur de contraste x4
+                                <br> > Lien vide x4
+                            </p>
+                        </figure>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Rapport sur la vitesse de chargement</h3>
+                    <p>Les images représentent plus 80% de la taille de chacune des pages. </p>
+                    <figure>
+                        <img src="gt-acceuil-og.png" alt="">
+                        <figcaption>
+                            <p class="text-center bold">Mesure de la vitesse de chargement de la page d'accueil
+                                originale</p>
+                        </figcaption>
+                        <p> > Temps de chargement total = 827ms
+                            <br> > First Contentful Paint = 468ms
+                            <br> > Speed Index = 573ms
+                            <br> > Largest Contentful Paint = 677ms
+                            <br> > Time To Interactive = 583ms
+                            <br> > Total Blocking Time = 21ms
+                            <br> > Cumulative Layout Shift = 0.05
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="gt-contact-og.png" alt="">
+                        <figcaption>
+                            <p class="text-center bold">Mesure de la vitesse de chargement de la page de contact
+                                originale</p>
+                        </figcaption>
+                        <p> > Temps de chargement total = 325ms
+                            <br> > First Contentful Paint = 277ms
+                            <br> > Speed Index = 279ms
+                            <br> > Largest Contentful Paint = 283ms
+                            <br> > Time To Interactive = 227ms
+                            <br> > Total Blocking Time = 0ms
+                            <br> > Cumulative Layout Shift = 0
+                        </p>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>
+                        <a href="https://kth-png.github.io/KathiaNwal_4_20052021/index.html">Version optimisée</a>
+                    </h2>
+                    <p>Dans la version optimisée les liens dans le footer ont été supprimés afin de ne pas induire les
+                        robots d'indexation en erreur.
+                        <br>Le titre du lien vers la page de contact dans la barre de navigation a été modifié pour
+                        qu'il soit plus explicit.
+                        <br>Les liens cassés ont été réparés, ce qui a eu pour effet de restaurer le fonctionnement du
+                        menu de navigation sur la page de contact et d'activer les scripts qui étaient bloqués.
+                        <br>Les images de texture ont été supprimées afin d'alléger les pages.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Bilan SEO avec Lighthouse</h3>
+                    <p>Recommandations apliquées:
+                        <br> - Mise en place de la balise meta description permettant de résumer de manière concise le
+                        contenu de la page.
+                        <br> - Amélioration de l'adaptation du site aux petits écrans. Les pertes de données sont
+                        évitées lorsque les dimensions des images sont adaptées à celle du type d'écran de l'utilisateur
+                        et pour une meilleure visibilité la taille du texte doit est supérieure ou égale à 12px.
+                        <br> - Mise en place des balises sémantiques, celles ci permettent d'agencer le contenu et de
+                        faciliter la compréhension du contenu par les robots d'indexation.
+                        <br> - Suppression des liens superflux dans le footer qui peuvent induire les bots en erreur.
+                        <br> - Suppression des textes invisibles, qui peuvent concidérés comme une tentative de cloaking
+                        lors de l'indexation.
+                    </p>
+                    
+                </div>
+                <div class="row">
+                    <figure>
+                        <img src="seo-lighthouse-mobile-op.png" alt="">
+                        <figcaption>
+                            <p class="text-center bold">Audit de référencement de la version mobile optimisée</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="border-solid" src="acceuil-mobile-op.png" alt="accueil version mobile optimisée">
+                        <figcaption>
+                            <p class="text-center bold">Page d'accueil - v. mobile optimisée</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="border-solid" src="contact-mobile-op.png"
+                            alt="page de contact version mobile optimisée">
+                        <figcaption>
+                            <p class="text-center bold">Page de contact - v. mobile optimisée</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Rapport d'accessibilité avec WAVE</h3>
+                    <div>
+                        <p class="text-justify">Recommandations appliquées:
+                            <br> - Mise en conformité des descriptions d'images afin de rendre le contenu accessible au
+                            plus grand nombre.
+                            <br> - Mise en place de noms dicernables pour les liens images grâce à l'attribut
+                            Aria-label. Celles-ci renseignent les lecteurs d'écran sur l'utilité du lien image
+                            sélectionné.
+                            <br> - Remaniement des couleurs afin d'augmenter les contrastes et d'accroitre la
+                            lisibilité.
+                            <br> - Ajout de la balise titre manquante, pour fluidifier la navigation et faciliter la
+                            comprehension lors de l'utilisation de technologies d'assistance.
+                            <br> - Renseignement de la langue appropriée afin que les lecteurs d'écran puissent ennoncer
+                            correctement le texte des pages.
+                            <br>Après analyse par l'outil WAVE, toutes les erreurs ont été corrigées sur les deux pages
+                            (voir ci-dessous)
+                        </p>
+                    </div>
+                    <div class="row">
+                        <figure>
+                            <img class="border-solid" src="wave-accueil-op.png" alt="">
+                            <figcaption>
+                                <p class="text-center bold">Rapport d'accessibilité - Page d'acceuil optimisée</p>
+                            </figcaption>
+
+                        </figure>
+                        <figure>
+                            <img class="border-solid" src="wave-contact-op.png" alt="">
+                            <figcaption>
+                                <p class="text-center bold">Rapport d'accessibilité - Page de contact optimisée</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <h3>Rapport sur la vitesse de chargement GTMETRIX</h3>
+                    <div>
+                        <p>Les principaux facteurs qui influencent la vitesse de chargement d'un site web sont la taille
+                            de celui-ci et la durée des requêtes necessaires pour l'afficher complètement. Ainsi, plus
+                            le site sera léger et les requêtes courtes, plus celui-ci se chargera rapidement.
+                            <br> Les recommandation suivantes sont basées essentiellement sur la taille des ressources:
+                            <br> - Mise à jour de l'encodage des images au format désuet tel que .bmp, les formats
+                            nouvelle génération offrent souvent une meilleure compression ce qui signifie des
+                            téléchargements plus rapides.
+                            <br> - Redimensionnement et compression des images. Les images optimisées se chargent plus
+                            rapidement, car moins volumineuses.
+                            <br> Les mesures prises grâce à GTMETRIX montrent une amélioration des métriques et par
+                            conséquent une augmentation d'environ 50% de la vitesse de chargement du site après
+                            optimisation.
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="gt-accueil-op.png" alt="">
+                        <figcaption>
+                            <p class="text-center bold">Mesure de la vitesse de chargement - Page d'acceuil optimisée
+                            </p>
+                        </figcaption>
+                        <p> > Temps de chargement total = 237ms
+                            <br> > First Contentful Paint = 184ms
+                            <br> > Speed Index = 230ms
+                            <br> > Largest Contentful Paint = 236ms
+                            <br> > Time To Interactive = 184ms
+                            <br> > Total Blocking Time = 0ms
+                            <br> > Cumulative Layout Shift = 0
+                        </p>
+                    </figure>
+                    <figure>
+                        <img src="gt-contact-op.png" alt="">
+                        <figcaption>
+                            <p class="text-center bold">Mesure de la vitesse de chargement - Page de contact optimisée
+                            </p>
+                        </figcaption>
+                        <p> > Temps de chargement total = 443ms
+                            <br> > First Contentful Paint = 195ms
+                            <br> > Speed Index = 185ms
+                            <br> > Largest Contentful Paint = 195ms
+                            <br> > Time To Interactive = 195ms
+                            <br> > Total Blocking Time = 0ms
+                            <br> > Cumulative Layout Shift = 0
+                        </p>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+            <img src="google-lighthouse-icon-seeklogo.com.svg" alt="Logo Lighthouse" width="50px">
+            <img src="wavelogo.svg" alt="Logo Wave" width="100px">
+            <img src="gtmetrix.jpg" alt="logo Gtmetrix" width="100px">
+    </footer>
+</body>
+
+</html>
